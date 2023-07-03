@@ -113,7 +113,48 @@ body{
     color:hsl(180, 29%, 50%);
     background-color: hsl(180, 52%, 96%) ;
     border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+.filtragem{
+    display: none;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 7rem;
+}
+.filtragemjs{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 7rem;
+}
+.ladoSppan{
+    display: flex;
+}
+.spanFilter{
+    display: flex;
+    margin-right: 10px;
+}
+.spanFilter span{
+    color:hsl(180, 29%, 50%);
+    background-color: hsl(180, 52%, 96%) ;
+    border-radius: 5px;
     padding: 7px
 }
-
+.spanFilter img{
+    background-color: hsl(180, 29%, 50%) ;
+    object-fit: contain;
+    padding: 5px;
+}
+.ladoClear{
+    color: hsl(180, 29%, 50%)
+}
 
