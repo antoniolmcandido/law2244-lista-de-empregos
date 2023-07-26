@@ -1,12 +1,12 @@
-function prencher(x){
-     x.forEach( (i)  => {
+function prencher(x) {
+     x.forEach((i) => {
           let element = document.querySelector(".emprego")
 
           let clone = element.cloneNode(true)
           clone.classList.remove("emprego")
           clone.classList.add("empregoClone")
 
-          if(i.new == false && i.featured== false){
+          if (i.new == false && i.featured == false) {
                let classNew = clone.querySelector(".new")
                let classfeatured = clone.querySelector(".featured")
                let classBar = clone.querySelector(".bar")
@@ -15,7 +15,7 @@ function prencher(x){
                classfeatured.style.display = "none"
                classBar.style.display = "none"
           }
-          if( i.featured== false){
+          if (i.featured == false) {
                let classfeatured = clone.querySelector(".featured")
                let classBar = clone.querySelector(".bar")
                classfeatured.style.display = "none"
@@ -35,7 +35,7 @@ function prencher(x){
           let local = clone.querySelector(".local")
 
           let imgLogo = clone.querySelector(".imgLogo")
-          
+
           contraador.innerHTML = i.company
 
           cargo.innerHTML = i.position
@@ -75,18 +75,16 @@ function prencher(x){
           lado2.append(spanLado3)
           spanLado3.classList.add(i.role)
           spanLado3.innerHTML = i.role
-          
+
           classEmpregos.append(clone)
-          
+
 
      })
 }
-let span = document.querySelectorAll(".lado span")
+
+let span = document.querySelectorAll(".lado1 span")
 
 console.log(span)
-
-
-
 
 async function alocarelements() {
      let req = await fetch("./assets/json/data.json")
